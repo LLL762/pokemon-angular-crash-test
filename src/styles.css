@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+.main-container {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.pokemon-types {
+  flex: 0 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+.pokemon-type-item {
+  width: 3em;
+  background-color: aliceblue;
+  padding: 0.5em;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.pokemon-item:hover {
+  scale: 1.05;
+}
