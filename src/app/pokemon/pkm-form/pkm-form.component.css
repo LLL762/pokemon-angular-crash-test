@@ -1,0 +1,53 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.form-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  max-width: 40em;
+  gap: 1em;
+  border: 2px rgb(207, 205, 205) solid;
+  border-radius: 2em;
+  box-shadow: 0.2em 0.2em 5px;
+  padding: 0.8em;
+}
+
+.form-item > label {
+  width: 5em;
+}
+
+.pkm-type-item {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  width: 5em;
+  background-color: aliceblue;
+  padding: 0.45em;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input {
+  border: 1px rgb(207, 205, 205) solid;
+  border-radius: 1em;
+  padding: 0.5em;
+  background-color: rgb(223, 220, 220);
+}
+
+.ng-valid[required] {
+  border: 2px solid green;
+}
+
+.ng-invalid:not(form) {
+  border: 2px solid red;
+}
+
+.error-msg {
+  color: red;
+}

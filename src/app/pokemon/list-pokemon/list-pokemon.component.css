@@ -1,0 +1,63 @@
+.main-container {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1600px;
+}
+
+.pokemon-item {
+  flex: 0 0.95 400px;
+  min-width: 300px;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  text-align: center;
+  border: 2px #b5b2b2 solid;
+  padding: 10px;
+  box-shadow: 5px 5px rgb(100, 98, 98);
+}
+
+.pokemon-description {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pkm-icon-wrapper {
+  margin: auto;
+}
+
+.pkm-icon {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.add-button {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3em;
+  background-color: aqua;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+}

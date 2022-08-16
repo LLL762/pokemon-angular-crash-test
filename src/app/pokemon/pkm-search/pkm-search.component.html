@@ -1,0 +1,16 @@
+<div class="input-field">
+  <input
+    #searchBox
+    (keyup)="search(searchBox.value)"
+    placeholder="rechercher un pokemon"
+  />
+  <div class="search-result">
+    <a
+      class="search-item"
+      *ngFor="let pokemon of pokemons$ | async"
+      (click)="goToDetail(pokemon)"
+    >
+      {{ pokemon.name }}</a
+    >
+  </div>
+</div>

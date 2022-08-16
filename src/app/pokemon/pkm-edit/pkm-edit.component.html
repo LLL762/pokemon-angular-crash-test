@@ -1,0 +1,5 @@
+<div class="main-container" *ngIf="oldPokemon && pokemon">
+  <h1>Editer {{ oldPokemon.name }} :</h1>
+  <div><img [src]="oldPokemon.iconUrl" alt=":(" alt="" /></div>
+  <app-pkm-form [newPokemon]="pokemon"></app-pkm-form>
+</div>

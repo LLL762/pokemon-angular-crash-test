@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  pkmListUrl: 'pokemons',
+  pkmDetailBaseUrl: 'pokemon',
+  pkmDetailPathVar: 'id',
+  pkmEditBaseUrl: 'pokemon/edit',
+  pkmEditPathVar: 'id',
+  pkmAddUrl: 'pokemons/add'
+
 };
 
 /*

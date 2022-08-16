@@ -1,0 +1,79 @@
+table,
+tr,
+th {
+  font-weight: normal;
+  text-align: left;
+  border-collapse: collapse;
+  padding: 0.8em;
+}
+
+tr:nth-child(odd) th {
+  background-color: rgb(228, 228, 228);
+}
+
+.double-border {
+  position: relative;
+  border-radius: 10px;
+}
+
+.double-border:before {
+  content: " ";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 5px rgb(146, 146, 149) solid;
+  border-radius: 12px;
+}
+
+.pokemon-container {
+  background-color: rgb(105, 147, 185);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  position: relative;
+  border: 1px rgb(146, 146, 149) solid;
+  padding: 10px 20px;
+  box-shadow: 5px 5px 5px;
+}
+
+.pokemon-display {
+  padding: 5px;
+  display: flex;
+  flex-direction: line;
+  background-color: white;
+}
+
+.pokemon-detail-types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+.button-bar {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6em;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.5em;
+  background-color: lightgrey;
+  border: 1px black solid;
+  border-radius: 0.5em;
+}
+
+img {
+  flex: 0 0 0px;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+.button:hover {
+  scale: 1.05;
+}
