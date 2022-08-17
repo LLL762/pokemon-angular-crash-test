@@ -1,0 +1,42 @@
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+img {
+    height: 1em;
+}
+
+.icon {
+    margin-left: 0.2em;
+    display: flex;
+}
+
+
+.search-bar {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.2em;
+    text-indent: 0.4em;
+    border-radius: 1em;
+    border: 2px grey solid;
+    box-shadow: 1px 1px;
+
+}
+
+.search-bar:hover {
+    scale: 1.05;
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+.outline {
+    outline: 2px rgba(189, 224, 189, 0.918) solid;
+}

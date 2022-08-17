@@ -6,12 +6,7 @@
   <app-pkm-search></app-pkm-search>
 
   <div class="pokemon-list">
-    <div
-      class="pokemon-item"
-      *ngFor="let pokemon of pokemons"
-      pkmnPokemonItem="red"
-      (click)="goToPkmDetails(pokemon)"
-    >
+    <div class="pokemon-item" *ngFor="let pokemon of pokemons" pkmnPokemonItem="red" (click)="goToPkmDetails(pokemon)">
       <div class="pkm-icon-wrapper">
         <img class="pkm-icon" [src]="pokemon.iconUrl" alt=":(" />
       </div>
@@ -19,11 +14,7 @@
         <h2>{{ pokemon.name }}</h2>
         <p>{{ pokemon.created | date: "dd/MM/yyyy" }}</p>
         <div class="pokemon-types">
-          <span
-            *ngFor="let type of pokemon.types"
-            [style]="type | pokemonTypeColor"
-            class="pokemon-type-item"
-          >
+          <span *ngFor="let type of pokemon.types" [style]="type | pokemonTypeColor" class="pokemon-type-item">
             {{ type }}
           </span>
         </div>

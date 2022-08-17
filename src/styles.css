@@ -6,6 +6,8 @@
   text-align: center;
   align-items: center;
   padding: 10px;
+  max-width: 1650px;
+
 }
 
 .row {
@@ -23,8 +25,9 @@
 }
 
 .pokemon-types {
-  flex: 0 0 0;
+
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.8em;
@@ -36,8 +39,4 @@
   padding: 0.5em;
   border-radius: 20px;
   text-align: center;
-}
-
-.pokemon-item:hover {
-  scale: 1.05;
 }
