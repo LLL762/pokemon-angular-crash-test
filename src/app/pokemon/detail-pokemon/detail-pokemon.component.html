@@ -20,11 +20,7 @@
           <th>types :</th>
           <th>
             <div class="pokemon-detail-types">
-              <span
-                *ngFor="let type of pokemon.types"
-                style="{{ type | pokemonTypeColor }}"
-                class="pokemon-type-item"
-              >
+              <span *ngFor="let type of pokemon.types" style="{{ type | pokemonTypeColor }}" class="pokemon-type-item">
                 {{ type }}
               </span>
             </div>
@@ -43,4 +39,8 @@
     <button (click)="goToPkmEdit(pokemon)" class="button">edit</button>
     <button (click)="deletePkm(pokemon)" class="button">delete</button>
   </div>
+</div>
+
+<div *ngIf='!pokemon'>
+  <app-loader></app-loader>
 </div>

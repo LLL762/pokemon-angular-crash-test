@@ -13,11 +13,12 @@ import { environment } from 'src/environments/environment';
 import { AddPokemonComponent } from './add-pokemon/add-pokemon.component';
 import { PkmSearchComponent } from './pkm-search/pkm-search.component';
 import { LoaderComponent } from './loader/loader.component';
+import { AuthGuard } from '../auth.guard';
 
 const pkmRoutes: Routes = [
   { path: environment.pkmListUrl, component: ListPokemonComponent },
   { path: environment.pkmDetailBaseUrl + '/:' + environment.pkmDetailPathVar, component: DetailPokemonComponent },
-  { path: environment.pkmEditBaseUrl + '/:' + environment.pkmEditPathVar, component: PkmEditComponent },
+  { path: environment.pkmEditBaseUrl + '/:' + environment.pkmEditPathVar, component: PkmEditComponent, canActivate: [AuthGuard] },
   { path: environment.pkmAddUrl, component: AddPokemonComponent }
 ];
 

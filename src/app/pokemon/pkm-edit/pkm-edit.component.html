@@ -3,3 +3,8 @@
   <div><img [src]="oldPokemon.iconUrl" alt=":(" alt="" /></div>
   <app-pkm-form [newPokemon]="pokemon"></app-pkm-form>
 </div>
+
+
+<div *ngIf='!pokemon'>
+  <app-loader></app-loader>
+</div>

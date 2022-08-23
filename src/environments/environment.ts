@@ -10,7 +10,8 @@ export const environment = {
   pkmDetailPathVar: 'id',
   pkmEditBaseUrl: 'pokemon/edit',
   pkmEditPathVar: 'id',
-  pkmAddUrl: 'pokemons/add'
+  pkmAddUrl: 'pokemons/add',
+  loginUrl: 'login'
 
 };
 

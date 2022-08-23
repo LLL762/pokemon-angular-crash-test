@@ -1,0 +1,8 @@
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+
+
+}
