@@ -1,28 +1,34 @@
 <div class="container">
+  <h2>Log in :</h2>
+  <p>{{ message }}</p>
 
-    <h2> Log in : </h2>
-    <p> {{message}}</p>
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="form-item">
+      <label for="username"> username :</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        [(ngModel)]="username"
+      />
+    </div>
 
-    <form (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="form-item">
+      <label for="password"> mot de passe:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        [(ngModel)]="password"
+      />
+    </div>
 
-        <div class="form-item">
-            <label for="username"> username :</label>
-            <input type="text" id="name" name="name" required [(ngModel)]="username">
-        </div>
+    <div class="button-bar">
+      <button type="submit" [disabled]="!username || !password">login</button>
 
-        <div class="form-item">
-            <label for="password"> mot de passe:</label>
-            <input type="password" id="password" name="password" required [(ngModel)]="password">
-        </div>
-
-        <div>
-            <button type="submit" [disabled]="!username || !password">
-                valider
-            </button>
-        </div>
-
-    </form>
-
-
-
+      <button [disabled]="!auth.isLoggedIn">logout</button>
+    </div>
+  </form>
 </div>
