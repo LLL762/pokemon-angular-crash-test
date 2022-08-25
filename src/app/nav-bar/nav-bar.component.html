@@ -1,0 +1,9 @@
+<div class="container">
+
+    <a [routerLink]="[homeUrl]">Home</a>
+
+    <a *ngIf="!auth.isLoggedIn" [routerLink]="[loginUrl]"> log in</a>
+
+
+
+</div>

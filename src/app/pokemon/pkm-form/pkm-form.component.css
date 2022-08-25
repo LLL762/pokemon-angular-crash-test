@@ -18,13 +18,12 @@ form {
   padding: 0.8em;
 }
 
-.form-item > label {
+.form-item>label {
   width: 5em;
 }
 
 .pkm-type-item {
   display: flex;
-  justify-content: center;
   gap: 0.5em;
   width: 5em;
   background-color: aliceblue;
@@ -34,11 +33,19 @@ form {
 }
 
 input {
+
   border: 1px rgb(207, 205, 205) solid;
   border-radius: 1em;
   padding: 0.5em;
   background-color: rgb(223, 220, 220);
 }
+
+.flex-input {
+  flex: 1 1 10em;
+
+}
+
+
 
 .ng-valid[required] {
   border: 2px solid green;
@@ -50,4 +57,19 @@ input {
 
 .error-msg {
   color: red;
+}
+
+.types-item {
+
+  justify-content: center;
+}
+
+.types-container {
+  padding: 0.2em;
+  align-items: center;
+  flex: 1 1 5em;
+  gap: 0.7em 0.6em;
+  display: flex;
+  flex-wrap: wrap;
+
 }

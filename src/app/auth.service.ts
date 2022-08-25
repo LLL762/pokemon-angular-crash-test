@@ -17,7 +17,6 @@ export class AuthService {
     const isLoggedIn = (username == 'pikachu' && password == "pikachu");
 
     return of(isLoggedIn).pipe(delay(1000), tap(isLoggedIn => this.isLoggedIn = isLoggedIn));
-
   }
 
   logout() {

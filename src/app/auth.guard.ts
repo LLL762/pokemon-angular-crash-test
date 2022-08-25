@@ -9,6 +9,9 @@ import { AuthService } from './auth.service';
 })
 export class AuthGuard implements CanActivate {
 
+
+  // Seulement pour faciliter la navigation, n'ajoute aucune sécurité.
+
   constructor(private authService: AuthService, private router: Router) { }
 
 
