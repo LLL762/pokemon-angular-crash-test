@@ -7,7 +7,6 @@
   align-items: center;
   padding: 10px;
   max-width: 1650px;
-  background-color: chartreuse;
 }
 
 .row {
@@ -34,7 +33,6 @@
 
 .pokemon-type-item {
   width: 3em;
-  background-color: aliceblue;
   padding: 0.5em;
   border-radius: 20px;
   text-align: center;

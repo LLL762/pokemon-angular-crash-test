@@ -1,11 +1,11 @@
 .main-container {
+  display: flex;
   gap: 2em;
   flex-direction: column;
   text-align: center;
   align-items: center;
   flex: 0 0 auto;
   padding: 10px;
-  background-color: black;
   max-width: 1600px;
   width: 100%;
 }
@@ -14,16 +14,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  background-color: red;
   grid-auto-rows: 1fr;
   grid-auto-columns: 1fr;
-
-  max-width: 1600px;
+  width: 90%;
 }
 
 .pokemon-item {
   max-width: 400px;
-  background-color: aqua;
   display: flex;
   flex-direction: row;
   gap: 0.8em;
