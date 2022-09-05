@@ -1,9 +1,7 @@
-<div class="container">
+<div id="menu-bar">
+  <a [routerLink]="[homeUrl]" class="menu-item">Home</a>
 
-    <a [routerLink]="[homeUrl]">Home</a>
-
-    <a *ngIf="!auth.isLoggedIn" [routerLink]="[loginUrl]"> log in</a>
-
-
-
+  <a *ngIf="!auth.isLoggedIn" [routerLink]="[loginUrl]" class="menu-item">
+    Log in</a
+  >
 </div>

@@ -7,12 +7,11 @@
   flex: 0 0 auto;
   padding: 10px;
   max-width: 1600px;
-  width: 100%;
 }
 
 .pokemon-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   grid-auto-rows: 1fr;
   grid-auto-columns: 1fr;
@@ -66,7 +65,8 @@ a {
 }
 
 .pokemon-item:hover,
-.pokemon-item:active {
+.pokemon-item:active,
+.pokemon-item:focus {
   scale: 1.05;
 }
 

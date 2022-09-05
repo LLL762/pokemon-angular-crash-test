@@ -1,0 +1,36 @@
+#menu-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8em;
+  border: 5px rgb(161, 153, 153) solid;
+  border-radius: 0.5em;
+  padding: 0.6em;
+  font-size: large;
+  text-align: center;
+  min-width: 200px;
+}
+
+.menu-item {
+  flex: 0 0 5em;
+  border: 2px rgb(136, 132, 132) solid;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  box-shadow: 4px 4px 10px rgb(136, 132, 132);
+}
+
+.menu-item:focus,
+.menu-item:hover,
+.menu-item:active {
+  scale: 1.05;
+  outline: 2px rgb(111, 199, 186) solid;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
+}

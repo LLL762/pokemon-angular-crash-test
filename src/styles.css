@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-.core-container {
+#core-container {
   gap: 1em;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
   align-items: center;
-  padding: 10px;
+  margin: auto;
   max-width: 1650px;
+  min-width: 320px;
 }
 
 .row {
@@ -36,4 +37,19 @@
   padding: 0.5em;
   border-radius: 20px;
   text-align: center;
+}
+
+.go-up-button {
+  position: fixed;
+  left: 10%;
+  bottom: 5%;
+  font-size: 3em;
+  background-color: rgba(190, 201, 201, 0.801);
+  color: black;
+  border-radius: 50%;
+  border: 3px grey solid;
+  width: 1em;
+  height: 1em;
+  z-index: 1;
+  transition: width 800ms ease;
 }

@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Pokemons</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-    <div class="core-container">
+    <div id="core-container">
       <app-nav-bar></app-nav-bar>
+
+      <div
+        (click)="scrollToTop()"
+        [hidden]="isScrollDown()"
+        class="go-up-button"
+      >
+        ^
+      </div>
 
       <!--     <h1>Liste de pokemons</h1>
 
