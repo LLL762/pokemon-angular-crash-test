@@ -5,24 +5,33 @@
 <div class="main-container">
   <app-pkm-search></app-pkm-search>
 
-  <div class="pokemon-list">
-    <div class="pokemon-item" *ngFor="let pokemon of pokemons" pkmnPokemonItem="red" (click)="goToPkmDetails(pokemon)">
-      <div class="pkm-icon-wrapper">
-        <img class="pkm-icon" [src]="pokemon.iconUrl" alt=":(" />
-      </div>
-      <div class="pokemon-description">
-        <h2>{{ pokemon.name }}</h2>
-        <p>{{ pokemon.created | date: "dd/MM/yyyy" }}</p>
-        <div class="pokemon-types">
-          <span *ngFor="let type of pokemon.types" [style]="type | pokemonTypeColor" class="pokemon-type-item">
-            {{ type }}
-          </span>
-        </div>
+  <div *ngIf="!pokemons">
+    <app-loader></app-loader>
+  </div>
+</div>
+
+<div class="pokemon-list">
+  <div
+    class="pokemon-item"
+    *ngFor="let pokemon of pokemons"
+    pkmnPokemonItem="red"
+    (click)="goToPkmDetails(pokemon)"
+  >
+    <div class="pkm-icon-wrapper">
+      <img class="pkm-icon" [src]="pokemon.iconUrl" alt=":(" />
+    </div>
+    <div class="pokemon-description">
+      <h2>{{ pokemon.name }}</h2>
+      <p>{{ pokemon.created | date: "dd/MM/yyyy" }}</p>
+      <div class="pokemon-types">
+        <span
+          *ngFor="let type of pokemon.types"
+          [style]="type | pokemonTypeColor"
+          class="pokemon-type-item"
+        >
+          {{ type }}
+        </span>
       </div>
     </div>
-  </div>
-
-  <div *ngIf='!pokemons'>
-    <app-loader></app-loader>
   </div>
 </div>

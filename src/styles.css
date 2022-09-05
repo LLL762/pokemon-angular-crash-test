@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-.main-container {
-  display: flex;
+.core-container {
   gap: 1em;
   flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
   align-items: center;
   padding: 10px;
   max-width: 1650px;
-
+  background-color: chartreuse;
 }
 
 .row {
@@ -25,7 +25,6 @@
 }
 
 .pokemon-types {
-
   display: flex;
   justify-content: center;
   flex-direction: row;
