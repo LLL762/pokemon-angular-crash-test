@@ -1,13 +1,22 @@
 <div class="input-field">
-
   <div #searchBar (click)="selectSearchBox()" class="search-bar">
-    <div class="icon"> <img src="assets\icons\magnifying-glass.svg" alt=":("></div>
-    <input #searchBox (focus)="onFocusSearchBox()" (focusout)="onFocusOutSearchBox()" (keyup)="search(searchBox.value)"
-      placeholder="rechercher un pokemon" />
+    <div class="icon">
+      <img src="assets\icons\magnifying-glass.svg" alt=":(" />
+    </div>
+    <input
+      #searchBox
+      (focus)="onFocusSearchBox()"
+      (focusout)="onFocusOutSearchBox()"
+      (keyup)="search(searchBox.value)"
+      placeholder="rechercher un pokemon"
+    />
   </div>
 
-  <div class="search-result">
-    <a class="search-item" *ngFor="let pokemon of pokemons$ | async" (click)="goToDetail(pokemon)">
-      {{ pokemon.name }}</a>
+  <div *ngFor="let pokemon of pokemons$ | async" class="search-result">
+    <div class="icon">
+      <img src="{{ pokemon.iconUrl }}" alt=":(" />
+    </div>
+
+    <a class="search-item" (click)="goToDetail(pokemon)"> {{ pokemon.name }}</a>
   </div>
 </div>

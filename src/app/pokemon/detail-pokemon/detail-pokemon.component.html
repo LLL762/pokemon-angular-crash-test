@@ -1,46 +1,52 @@
-<div *ngIf="pokemon" class="pokemon-container">
-  <h1>{{ pokemon.name }}</h1>
-  <div class="double-border pokemon-display">
-    <img class="no-flex" [src]="pokemon.iconUrl" alt="Une image de pokemon" />
-    <div class="pokemon-stats">
-      <table class="pokemon-table">
-        <tr>
-          <th>nom :</th>
-          <th>{{ pokemon.name }}</th>
-        </tr>
-        <tr>
-          <th>hp :</th>
-          <th>{{ pokemon.hp }}</th>
-        </tr>
-        <tr>
-          <th>cp :</th>
-          <th>{{ pokemon.cp }}</th>
-        </tr>
-        <tr>
-          <th>types :</th>
-          <th>
-            <div class="pokemon-detail-types">
-              <span *ngFor="let type of pokemon.types" style="{{ type | pokemonTypeColor }}" class="pokemon-type-item">
-                {{ type }}
-              </span>
-            </div>
-          </th>
-        </tr>
-        <tr>
-          <th>date de creation :</th>
-          <th>{{ pokemon.created | date: "dd/MM/yyyy" }}</th>
-        </tr>
-      </table>
+<div class="main-container">
+  <div *ngIf="pokemon" class="pokemon-container">
+    <h1>{{ pokemon.name }}</h1>
+    <div class="double-border pokemon-display">
+      <img class="no-flex" [src]="pokemon.iconUrl" alt="Une image de pokemon" />
+      <div class="pokemon-stats">
+        <table class="pokemon-table">
+          <tr>
+            <th scope="col">nom :</th>
+            <th scope="col">{{ pokemon.name }}</th>
+          </tr>
+          <tr>
+            <th scope="col">hp :</th>
+            <th scope="col">{{ pokemon.hp }}</th>
+          </tr>
+          <tr>
+            <th scope="col">cp :</th>
+            <th scope="col">{{ pokemon.cp }}</th>
+          </tr>
+          <tr>
+            <th scope="col">types :</th>
+            <th scope="col">
+              <div class="pokemon-detail-types">
+                <span
+                  *ngFor="let type of pokemon.types"
+                  style="{{ type | pokemonTypeColor }}"
+                  class="pokemon-type-item"
+                >
+                  {{ type }}
+                </span>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>date de creation :</th>
+            <th>{{ pokemon.created | date: "dd/MM/yyyy" }}</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="button-bar">
+      <button (click)="goToPkmList()" class="button">retour</button>
+      <button (click)="goToPkmEdit(pokemon)" class="button">edit</button>
+      <button (click)="deletePkm(pokemon)" class="button">delete</button>
     </div>
   </div>
 
-  <div class="button-bar">
-    <button (click)="goToPkmList()" class="button">retour</button>
-    <button (click)="goToPkmEdit(pokemon)" class="button">edit</button>
-    <button (click)="deletePkm(pokemon)" class="button">delete</button>
+  <div *ngIf="!pokemon">
+    <app-loader></app-loader>
   </div>
-</div>
-
-<div *ngIf='!pokemon'>
-  <app-loader></app-loader>
 </div>

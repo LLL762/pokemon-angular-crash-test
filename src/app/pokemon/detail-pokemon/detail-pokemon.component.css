@@ -7,6 +7,10 @@ th {
   padding: 0.8em;
 }
 
+th {
+  height: 2em;
+}
+
 tr:nth-child(odd) th {
   background-color: rgb(228, 228, 228);
 }
