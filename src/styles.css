@@ -1,8 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 #core-container {
-  gap: 1em;
-  flex-direction: column;
-  justify-content: flex-start;
   text-align: center;
   align-items: center;
   margin: auto;
@@ -51,5 +48,4 @@
   width: 1em;
   height: 1em;
   z-index: 1;
-  transition: width 800ms ease;
 }

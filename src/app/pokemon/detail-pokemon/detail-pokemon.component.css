@@ -36,13 +36,20 @@ tr:nth-child(odd) th {
   border: 1px rgb(146, 146, 149) solid;
   padding: 10px 20px;
   box-shadow: 5px 5px 5px;
+  max-width: 650px;
+  margin: auto;
 }
 
 .pokemon-display {
   padding: 5px;
   display: flex;
+  justify-content: center;
   flex-direction: line;
+  flex-wrap: wrap;
   background-color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 .pokemon-detail-types {
@@ -68,9 +75,9 @@ tr:nth-child(odd) th {
 }
 
 img {
-  flex: 0 0 0px;
-  width: 250px;
-  height: 250px;
+  flex: 0.1 1 20px;
+  width: auto;
+  max-width: 250px;
   margin: auto;
 }
 
