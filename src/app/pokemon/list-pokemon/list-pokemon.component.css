@@ -1,6 +1,8 @@
 .main-container {
   display: flex;
-  gap: 2em;
+  position: relative;
+  display: flex;
+  gap: 1.5em;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -10,6 +12,7 @@
 }
 
 .pokemon-list {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
@@ -61,6 +64,7 @@ a {
   border: 3px grey solid;
   width: 1em;
   height: 1em;
+  z-index: 1;
 }
 
 .pokemon-item:hover,

@@ -2,6 +2,9 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2em;
+  align-items: center;
+  max-width: 100%;
+  padding: 1em;
 }
 
 .form-item {
@@ -10,15 +13,17 @@ form {
   flex-direction: row;
   text-align: left;
   align-items: center;
+  width: 100%;
   max-width: 40em;
   gap: 1em;
   border: 2px rgb(207, 205, 205) solid;
   border-radius: 2em;
   box-shadow: 0.2em 0.2em 5px;
   padding: 0.8em;
+  padding-left: 1em;
 }
 
-.form-item>label {
+.form-item > label {
   width: 5em;
 }
 
@@ -33,7 +38,6 @@ form {
 }
 
 input {
-
   border: 1px rgb(207, 205, 205) solid;
   border-radius: 1em;
   padding: 0.5em;
@@ -42,10 +46,7 @@ input {
 
 .flex-input {
   flex: 1 1 10em;
-
 }
-
-
 
 .ng-valid[required] {
   border: 2px solid green;
@@ -60,7 +61,6 @@ input {
 }
 
 .types-item {
-
   justify-content: center;
 }
 
@@ -71,5 +71,4 @@ input {
   gap: 0.7em 0.6em;
   display: flex;
   flex-wrap: wrap;
-
 }

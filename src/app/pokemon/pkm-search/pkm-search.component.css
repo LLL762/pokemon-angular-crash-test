@@ -1,10 +1,16 @@
 .input-field {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   border-radius: 1em;
   border: 2px grey solid;
   box-shadow: 1px 1px;
-  padding: 0.25em;
+  padding: 0.3em;
+  z-index: 1;
+  background-color: #fff;
+  font-size: larger;
 }
 
 input {
@@ -15,6 +21,7 @@ input {
 
 img {
   height: 1em;
+  margin: auto;
 }
 
 .icon {
@@ -30,18 +37,29 @@ img {
   border-radius: 1em;
 }
 
-.input-field:hover,
-.input-field:active,
-.input-field:focus {
-  scale: 1.05;
+.pkm-found:hover,
+.pkm-found:active,
+.pkm-found:focus {
+  background-color: rgb(214, 231, 231);
+  cursor: pointer;
 }
 
-.search-result {
+.pkm-found {
+  position: relative;
   display: flex;
   gap: 0.5em;
   padding: 0.35em;
   text-indent: 0.4em;
   border-radius: 1em;
+}
+
+.pkm-found::before {
+  position: absolute;
+  content: "";
+  border-top: 1px black solid;
+  top: 5%;
+  left: 15%;
+  width: 60%;
 }
 
 .outline {

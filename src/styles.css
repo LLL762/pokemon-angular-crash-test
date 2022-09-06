@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  min-width: 320px;
+  margin: auto;
+}
+
 #core-container {
   text-align: center;
   align-items: center;
   margin: auto;
-  max-width: 1650px;
+  max-width: 1400px;
   min-width: 320px;
 }
 
@@ -48,4 +54,11 @@
   width: 1em;
   height: 1em;
   z-index: 1;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: inherit;
 }

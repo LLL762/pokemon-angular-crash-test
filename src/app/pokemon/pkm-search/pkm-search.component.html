@@ -11,12 +11,17 @@
       placeholder="rechercher un pokemon"
     />
   </div>
+  <a
+    *ngFor="let pokemon of pokemons$ | async"
+    class="search-result"
+    (click)="goToDetail(pokemon)"
+  >
+    <div class="pkm-found">
+      <div class="icon">
+        <img src="{{ pokemon.iconUrl }}" alt=":(" />
+      </div>
 
-  <div *ngFor="let pokemon of pokemons$ | async" class="search-result">
-    <div class="icon">
-      <img src="{{ pokemon.iconUrl }}" alt=":(" />
+      <a class="search-item"> {{ pokemon.name }}</a>
     </div>
-
-    <a class="search-item" (click)="goToDetail(pokemon)"> {{ pokemon.name }}</a>
-  </div>
+  </a>
 </div>
