@@ -1,3 +1,7 @@
+.main-container {
+  padding: 1em;
+}
+
 form {
   display: flex;
   flex-direction: column;
