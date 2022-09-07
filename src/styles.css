@@ -10,7 +10,7 @@ body {
   align-items: center;
   margin: auto;
   max-width: 1400px;
-  min-width: 320px;
+  min-width: 340px;
 }
 
 .row {
@@ -61,4 +61,35 @@ select,
 textarea,
 button {
   font-size: inherit;
+}
+
+html {
+  display: block;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
 }
