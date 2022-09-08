@@ -24,6 +24,7 @@
   padding: 10px;
   box-shadow: 5px 5px rgb(100, 98, 98);
   justify-content: space-around;
+  background-color: var(--pkm-list-card-bck-color);
 }
 
 .pkm-content {

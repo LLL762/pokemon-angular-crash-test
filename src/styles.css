@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --main-bck-color: rgb(255, 255, 255);
+  --main-text-color: rgb(36, 36, 36);
+  --main-font-size: 16px;
+  --pkm-list-card-bck-color: rgb(243, 243, 243);
+}
+
 body {
   min-width: 320px;
   margin: auto;
@@ -11,7 +18,10 @@ body {
   margin: auto;
   max-width: 1400px;
   min-width: 340px;
+  font-size: var(--main-font-size);
   font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--main-bck-color);
+  color: var(--main-text-color);
 }
 
 h2 {
